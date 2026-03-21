@@ -1,0 +1,114 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@4.9.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="app__container h-full w-full bg-slate-50">
+      <header class="border-b border-slate-300/50 relative">
+        <div class="container max-w-6xl mx-auto px-6">
+          <nav class="navbar flex items-center justify-between py-2">
+            <div class="logo">
+              <h2 class="text-2xl font-semibold text-green-500">
+                EliteForm Studio
+              </h2>
+            </div>
+
+            <!-- large screen -->
+            <div class="hidden md:block">
+              <div class="">
+                <ul class="">
+                  <li><a href="#">Home</a></li>
+                  <li><a href="#">Programs</a></li>
+                  <li><a href="#">Transformations</a></li>
+                  <li><a href="#">Pricing</a></li>
+                  <li><a href="#">Contact</a></li>
+                </ul>
+              </div>
+
+              <div class="cta hidden md:block">
+                <button>Book Consultation</button>
+              </div>
+            </div>
+
+            <!-- mobile -->
+            <div class="mobile__menu fixed md:hidden top-0 right-0 bg-zinc-900 w-[80%] h-full px-4 flex flex-col gap-4 translate-x-full transition duration-300 z-100">
+
+                <div class="menu__close flex justify-end mb-8 relative top-2 right-2">
+                    <button class="text-4xl text-green-400"><i class="ri-close-line"></i></button>
+                </div>
+
+              <div class="text-2xl">
+                <ul class="flex flex-col gap-4 text-slate-100">
+                  <li><a href="#">Home</a></li>
+                  <li><a href="#">Programs</a></li>
+                  <li><a href="#">Transformations</a></li>
+                  <li><a href="#">Pricing</a></li>
+                  <li><a href="#">Contact</a></li>
+                </ul>
+              </div>
+
+              <div class="cta md:hidden">
+                <button class="border bg-green-400 px-4 py-2 rounded-xl cursor-pointer text-2xl font-semibold">Book Consultation</button>
+              </div>
+            </div>
+
+            <div class="ham__menu">
+              <button class="text-2xl text-green-400"><i class="ri-menu-line"></i></button>
+            </div>
+          </nav>
+        </div>
+      </header>
+
+
+      <main>
+        <section class="hero mt-4">
+          <!-- container utility -->
+          <div class="container max-w-6xl mx-auto px-6">
+
+            <!-- hero image -->
+              <div class="relative bg-[url(./hero.webp)] h-[85vh] bg-center bg-no-repeat bg-cover rounded-xl overflow-hidden">
+
+                <!-- overlay -->
+                 <div class="absolute inset-0 bg-black/70"></div>
+
+                 <!-- content -->
+
+                 <div class="relative z-10 h-full flex flex-col items-center justify-center">
+                  <h1 class="text-slate-100 font-bold text-4xl text-center mb-4">Sculpt <span class="text-green-400">Strength.</span> <br> Refine <span class="text-green-400">Form.</span></h1>
+
+                  <p class="text-slate-300 font-semibold text-center leading-tight text-sm">Elite Form Studio is a premium training environment focused on precision, performance, and sustainable transformation. <br> Every program is tailored, every session intentional, and every result measurable.</p>
+
+
+                  <!-- cta button -->
+                  <div class="flex flex-col gap-4 mt-6 *:cursor-pointer">
+                    <button class="bg-green-400 px-4 py-2 rounded-xl font-semibold shadow-[0_8px_30px_rgb(0,0,0,0.12)]">Book a Consultation</button>
+                    <button class="border border-green-400 text-green-400 rounded-xl font-semibold px-4 py-2">View Programs</button>
+                  </div>
+
+                  <!-- trust line -->
+
+                  <div class="flex flex-col gap-0.5 leading-tight text-center text-[12px] font-semibold mt-4">
+                    <p class="text-slate-300">1,200+ Clients Trained</p>
+                    <p class="text-slate-300">Certified Coaches</p>
+                    <p class="text-slate-300">Results-Driven Systems</p>
+                  </div>
+                 </div>
+              </div>
+          </div>
+        </section>
+      </main>
+    </div>
+
+
+
+    <script src="script.js"></script>
+  </body>
+</html>
