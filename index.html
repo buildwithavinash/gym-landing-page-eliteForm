@@ -17,7 +17,7 @@
   <body>
     <div class="app__container h-full w-full bg-slate-50">
       <header class="border-b border-slate-300/50 relative">
-        <div class="container max-w-6xl mx-auto px-2">
+        <div class="container max-w-6xl mx-auto px-2 md:px-20">
           <nav class="navbar flex items-center justify-between py-2">
             <div class="logo">
               <h2 class="text-3xl font-bold text-green-500">
@@ -26,9 +26,9 @@
             </div>
 
             <!-- large screen -->
-            <div class="hidden md:block">
+            <div class="hidden md:flex gap-8 justify-between items-center">
               <div class="">
-                <ul class="">
+                <ul class="flex gap-4 *:hover:text-green-400 *:transition-all *:duration-200 *:font-semibold">
                   <li><a href="#">Home</a></li>
                   <li><a href="#">Programs</a></li>
                   <li><a href="#">Transformations</a></li>
@@ -38,7 +38,7 @@
               </div>
 
               <div class="cta hidden md:block">
-                <button>Book Consultation</button>
+                <button class="bg-green-400 px-4 py-2 cursor-pointer rounded-xl font-semibold shadow-[0_8px_30px_rgb(0,0,0,0.12)] hover:bg-green-700 transition-all duration-200">Book Consultation</button>
               </div>
             </div>
 
@@ -73,7 +73,7 @@
               </div>
             </div>
 
-            <div class="ham__menu">
+            <div class="ham__menu md:hidden">
               <button class="text-3xl text-green-400">
                 <i class="ri-menu-line"></i>
               </button>
@@ -85,7 +85,7 @@
       <main>
         <section class="hero mt-4">
           <!-- container utility -->
-          <div class="container max-w-6xl mx-auto px-2">
+          <div class="container max-w-6xl mx-auto px-2 md:px-20">
             <!-- hero image -->
             <div
               class="relative bg-[url(./hero.webp)] h-[85vh] bg-center bg-no-repeat bg-cover rounded-xl overflow-hidden"
@@ -98,13 +98,13 @@
               <div
                 class="relative z-10 h-full flex flex-col items-center justify-center px-4"
               >
-                <h1 class="text-slate-100 font-bold text-4xl text-center mb-4">
+                <h1 class="text-slate-100 font-bold text-4xl text-center mb-4 md:text-6xl leading-tight">
                   Sculpt <span class="text-green-400">Strength.</span> <br />
                   Refine <span class="text-green-400">Form.</span>
                 </h1>
 
                 <p
-                  class="text-slate-300 font-semibold text-center leading-tight text-sm"
+                  class="text-slate-200 font-semibold text-center leading-tight text-sm md:text-lg md:max-w-2xl"
                 >
                   Elite Form Studio is a premium training environment focused on
                   precision, performance, and sustainable transformation. <br />
@@ -115,12 +115,12 @@
                 <!-- cta button -->
                 <div class="flex flex-col gap-4 mt-6 *:cursor-pointer">
                   <button
-                    class="bg-green-400 px-4 py-2 rounded-xl font-semibold shadow-[0_8px_30px_rgb(0,0,0,0.12)] hover:bg-green-700 transition-all duration-200"
+                    class="bg-green-400 px-4 py-2 md:px-8 md:py-4 rounded-xl font-semibold shadow-[0_8px_30px_rgb(0,0,0,0.12)] hover:bg-green-700 transition-all duration-200"
                   >
                     Book a Consultation
                   </button>
                   <button
-                    class="border border-green-400 text-green-400 rounded-xl font-semibold px-4 py-2 hover:bg-green-400 hover:text-slate-900 transition-all duration-200"
+                    class="border border-green-400 text-green-400 rounded-xl font-semibold px-4 py-2 md:px-8 md:py-4 hover:bg-green-400 hover:text-slate-900 transition-all duration-200"
                   >
                     View Programs
                   </button>
@@ -129,7 +129,7 @@
                 <!-- trust line -->
 
                 <div
-                  class="flex flex-col gap-0.5 leading-tight text-center text-[12px] font-semibold mt-4"
+                  class="flex flex-col gap-0.5 leading-tight text-center text-xs font-semibold mt-4"
                 >
                   <p class="text-slate-300">1,200+ Clients Trained</p>
                   <p class="text-slate-300">Certified Coaches</p>
@@ -154,13 +154,13 @@
 
         <section class="about py-12 mt-2">
           <div class="container max-w-6xl mx-auto px-2">
-            <div class="bg-slate-100 p-4 rounded-xl">
-              <h3 class="text-2xl text-center font-bold mb-4 text-slate-900">
+            <div class="bg-slate-100 p-4 py-16 rounded-xl">
+              <h3 class="text-2xl text-center font-bold mb-4 text-slate-900 md:text-4xl">
                 A System Built on Precision, Not Guesswork
               </h3>
 
-              <p class="text-base leading-tight text-slate-800 text-center">
-                At At Elite Form Studio, we focus on precision over randomness.
+              <p class="text-base leading-tight text-slate-800 text-center md:max-w-2xl mx-auto md:text-lg">
+                At Elite Form Studio, we focus on precision over randomness.
                 Every movement, every set, every progression is designed with
                 intent. <br /><br />
                 This isn’t about just working out — it’s about building a body
@@ -168,9 +168,9 @@
               </p>
 
               <div
-                class="grid grid-cols-2 gap-2 mt-4 bg-slate-200 p-2 rounded-xl"
+                class="grid grid-cols-2 md:grid-cols-4 md:items-center gap-2 mt-4  p-2 rounded-xl"
               >
-                <div class="relative h-40 rounded-xl overflow-hidden">
+                <div class="relative h-40 md:h-60 rounded-xl overflow-hidden">
                   <div
                     class="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1583454110551-21f2fa2afe61?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D')] bg-cover bg-center"
                   ></div>
@@ -186,7 +186,7 @@
                   </div>
                 </div>
 
-                <div class="relative h-40 rounded-xl overflow-hidden">
+                <div class="relative h-40 md:h-60 rounded-xl overflow-hidden">
                   <div
                     class="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1512621776951-a57141f2eefd?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D')] bg-cover bg-center"
                   ></div>
@@ -202,7 +202,7 @@
                   </div>
                 </div>
 
-                <div class="relative h-40 rounded-xl overflow-hidden">
+                <div class="relative h-40 md:h-60 rounded-xl overflow-hidden">
                   <div
                     class="absolute inset-0 bg-[url('https://plus.unsplash.com/premium_photo-1672862925604-9079f0a492e8?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D')] bg-cover bg-center"
                   ></div>
@@ -218,7 +218,7 @@
                   </div>
                 </div>
 
-                <div class="relative h-40 rounded-xl overflow-hidden">
+                <div class="relative h-40 md:h-60 rounded-xl overflow-hidden">
                   <div
                     class="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1773399452188-a42e29543bf2?q=80&w=790&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D')] bg-cover bg-center"
                   ></div>
@@ -240,60 +240,83 @@
 
         <section class="programs py-12">
           <div class="container max-w-6xl mx-auto px-2">
-            <div class="bg-slate-100 p-4 rounded-xl">
-              <h3 class="text-center font-bold text-slate-900 text-2xl mb-6">
+            <div class="bg-slate-100 p-4 py-16 rounded-xl">
+              <h3 class="text-center font-bold text-slate-900 text-2xl mb-6 md:text-4xl">
                 Structured Programs. <br />
                 Defined Outcomes.
               </h3>
 
-              <div class="grid grid-cols-1 gap-8">
+              <div class="grid grid-cols-1 md:grid-cols-4 gap-8 px-4 mt-8">
                 <div
-                  class="card border-l-4 border-l-red-600 pl-2 flex justify-center flex-col"
+                  class="card border bg-slate-50 shadow-lg border-slate-300 p-2 rounded-2xl flex justify-center flex-col text-center"
                 >
-                  <h4 class="text-lg font-semibold text-red-600 mb-1">
-                    Body Recomposition Program
+
+                <div class="h-20 flex items-center justify-center text-center">
+                  <h4 class="text-lg font-semibold text-red-500 md:text-xl">
+                    Body Recomposition
                   </h4>
+                </div>
+
+                <div class="h-32 overflow-hidden">
                   <p class="text-sm text-slate-800">
                     A balanced approach to reducing body fat while developing
                     lean muscle mass. Designed for individuals seeking visible,
-                    sustainable transformation without extreme methods.
+                    sustainable transformation.
                   </p>
+                </div>
                 </div>
 
                 <div
-                  class="card border-l-4 border-l-sky-600 pl-2 flex justify-center flex-col"
+                  class="card border bg-slate-50 shadow-lg border-slate-300 p-2 rounded-2xl flex justify-center items-center flex-col text-center"
                 >
-                  <h4 class="text-lg font-semibold text-sky-600 mb-1">
-                    Strength Development Program
+                <div class="h-20 flex items-center justify-center text-center">
+                  <h4 class="text-lg font-semibold text-sky-600 md:text-xl">
+                    Strength Development
                   </h4>
+                  </div>
+
+                   <div class="h-32 overflow-hidden">
                   <p class="text-sm text-slate-800">
                     Progressive strength training focused on building raw power,
                     improving compound lifts, and enhancing overall performance.
                   </p>
+                  </div>
                 </div>
 
                 <div
-                  class="card border-l-4 border-l-green-600 pl-2 flex justify-center flex-col"
+                  class="card border bg-slate-50 shadow-lg border-slate-300 p-2 rounded-2xl flex justify-center flex-col text-center"
                 >
-                  <h4 class="text-lg font-semibold text-green-600 mb-1">
+
+                <div class="h-20 flex items-center justify-center text-center">
+                  <h4 class="text-lg font-semibold text-green-600 md:text-xl">
                     Private Coaching
                   </h4>
+                  </div>
+
+                  <div class="h-32 overflow-hidden">
                   <p class="text-sm text-slate-800">
                     One-on-one coaching sessions tailored to your specific
                     goals, movement patterns, and performance benchmarks.
                   </p>
+                  </div>
                 </div>
 
                 <div
-                  class="card border-l-4 border-l-yellow-500 pl-2 flex justify-center flex-col"
+                  class="card border bg-slate-50 shadow-lg border-slate-300 p-2 rounded-2xl flex justify-center flex-col text-center"
                 >
-                  <h4 class="text-lg font-semibold text-yellow-500 mb-1">
+
+                 <div class="h-20 flex items-center justify-center text-center">
+                  <h4 class="text-lg font-semibold text-yellow-600 md:text-xl">
                     Online Coaching
                   </h4>
+                  </div>
+
+                  <div class="h-32 overflow-hidden">
                   <p class="text-sm text-slate-800">
                     A fully guided remote training system with customized
                     workout plans, regular check-ins, and progress tracking.
                   </p>
+                  </div>
                 </div>
               </div>
             </div>
@@ -302,20 +325,20 @@
 
         <section class="transformation py-12">
           <div class="container max-w-6xl mx-auto px-2">
-            <div class="bg-slate-100 p-4 rounded-xl">
-              <h4 class="text-center font-bold text-slate-900 text-2xl mb-6">
+            <div class="bg-slate-100 p-4 py-16 rounded-xl">
+              <h4 class="text-center font-bold text-slate-900 text-2xl mb-6 md:text-4xl">
                 Measurable Progress. <br />Visible Results.
               </h4>
-              <p class="text-base leading-tight text-slate-800 text-center">
+              <p class="text-base leading-tight text-slate-800 text-center md:max-w-2xl mx-auto">
                 Every transformation at Elite Form Studio is backed by
                 structured tracking, consistent execution, and refined
                 programming. <br /><br />
                 We focus on results that are not only visible — but sustainable.
               </p>
 
-              <div class="grid grid-cols-1 gap-4 p-4">
+              <div class="grid grid-cols-1 md:grid-cols-3 gap-4 p-4 mt-4">
                 <div
-                  class="card relative h-50 rounded-2xl overflow-hidden shadow-[0px_0px_0px_1px_rgba(0,0,0,0.06),0px_1px_1px_-0.5px_rgba(0,0,0,0.06),0px_3px_3px_-1.5px_rgba(0,0,0,0.06),0px_6px_6px_-3px_rgba(0,0,0,0.06),0px_12px_12px_-6px_rgba(0,0,0,0.06),0px_24px_24px_-12px_rgba(0,0,0,0.06)]"
+                  class="card relative h-80 rounded-2xl overflow-hidden shadow-[0px_0px_0px_1px_rgba(0,0,0,0.06),0px_1px_1px_-0.5px_rgba(0,0,0,0.06),0px_3px_3px_-1.5px_rgba(0,0,0,0.06),0px_6px_6px_-3px_rgba(0,0,0,0.06),0px_12px_12px_-6px_rgba(0,0,0,0.06),0px_24px_24px_-12px_rgba(0,0,0,0.06)]"
                 >
                   <div
                     class="absolute inset-0 bg-[url('https://s.yimg.com/ny/api/res/1.2/8JMXg3wTDSV02yS4_5wUEg--/YXBwaWQ9aGlnaGxhbmRlcjt3PTEyNDI7aD04ODc7Y2Y9d2VicA--/http://40.media.tumblr.com/22dc20f10d1a63361c753ad215dba421/tumblr_inline_o04yypCALW1tcjfoa_1280.jpg')] bg-cover bg-center"
@@ -332,7 +355,7 @@
                 </div>
 
                 <div
-                  class="card relative h-50 rounded-2xl overflow-hidden shadow-[0px_0px_0px_1px_rgba(0,0,0,0.06),0px_1px_1px_-0.5px_rgba(0,0,0,0.06),0px_3px_3px_-1.5px_rgba(0,0,0,0.06),0px_6px_6px_-3px_rgba(0,0,0,0.06),0px_12px_12px_-6px_rgba(0,0,0,0.06),0px_24px_24px_-12px_rgba(0,0,0,0.06)]"
+                  class="card relative h-80 rounded-2xl overflow-hidden shadow-[0px_0px_0px_1px_rgba(0,0,0,0.06),0px_1px_1px_-0.5px_rgba(0,0,0,0.06),0px_3px_3px_-1.5px_rgba(0,0,0,0.06),0px_6px_6px_-3px_rgba(0,0,0,0.06),0px_12px_12px_-6px_rgba(0,0,0,0.06),0px_24px_24px_-12px_rgba(0,0,0,0.06)]"
                 >
                   <div
                     class="absolute inset-0 bg-[url('https://content3.jdmagicbox.com/comp/kota-rajasthan/t6/9999px744.x744.190703172521.m2t6/catalogue/fat-to-fit-studio-vigyan-nagar-kota-rajasthan-zumba-classes-h9hzusrl4q.jpg')] bg-cover bg-center"
@@ -349,7 +372,7 @@
                 </div>
 
                 <div
-                  class="card relative h-50 rounded-2xl overflow-hidden shadow-[0px_0px_0px_1px_rgba(0,0,0,0.06),0px_1px_1px_-0.5px_rgba(0,0,0,0.06),0px_3px_3px_-1.5px_rgba(0,0,0,0.06),0px_6px_6px_-3px_rgba(0,0,0,0.06),0px_12px_12px_-6px_rgba(0,0,0,0.06),0px_24px_24px_-12px_rgba(0,0,0,0.06)]"
+                  class="card relative h-80 rounded-2xl overflow-hidden shadow-[0px_0px_0px_1px_rgba(0,0,0,0.06),0px_1px_1px_-0.5px_rgba(0,0,0,0.06),0px_3px_3px_-1.5px_rgba(0,0,0,0.06),0px_6px_6px_-3px_rgba(0,0,0,0.06),0px_12px_12px_-6px_rgba(0,0,0,0.06),0px_24px_24px_-12px_rgba(0,0,0,0.06)]"
                 >
                   <div
                     class="absolute inset-0 bg-[url('https://i0.wp.com/ironandgrit.com/wp-content/uploads/2018/11/fat-to-fit-in-3-months-body-transformation-550x550.jpeg?resize=550%2C550')] bg-cover bg-center"
@@ -371,13 +394,13 @@
 
         <section class="choose py-12">
           <div class="container max-w-6xl mx-auto px-2">
-            <div class="bg-slate-100 p-4 rounded-xl">
+            <div class="bg-slate-100 p-4 py-16 rounded-xl">
               <div class="text-center">
-                <h2 class="font-bold text-3xl mb-4 text-green-500">WHY CHOOSE US</h2>
+                <h2 class="font-bold text-3xl mb-4 text-green-500 md:text-4xl">WHY CHOOSE US</h2>
                 <h3 class="font-semibold text-2xl">The Elite Standard</h3>
               </div>
 
-              <div class="mt-4 grid grid-cols-1 gap-4">
+              <div class="mt-4 grid grid-cols-1 md:grid-cols-4 md:mt-8 gap-4">
                 
                 
                 <div class="card flex flex-col text-center gap-2 border border-slate-300 p-2 rounded-xl">
@@ -435,21 +458,21 @@
 
         <section class="pricing py-12">
           <div class="container max-w-6xl mx-auto px-2">
-            <div class="bg-slate-100 p-4 pb-10 rounded-xl">
+            <div class="bg-slate-100 p-4 py-24 rounded-xl">
                 <div class="text-center">
-                  <h3 class="text-2xl text-center font-bold mb-4 text-slate-900">Choose Your Level of Commitment</h3>
+                  <h3 class="text-2xl text-center font-bold mb-4 text-slate-900 md:text-4xl">Choose Your Level of Commitment</h3>
                   <p class="text-base leading-tight text-slate-800 text-center">Our programs are designed to match your goals, experience level, and desired level of support.</p>
                 </div>
 
 
                 <!-- pricing cards -->
-                 <div class="mt-4 grid grid-cols-1 gap-12">
+                 <div class="mt-4 grid grid-cols-1 md:grid-cols-3 gap-12 md:mt-12">
                 <div class="pricing__card border border-slate-300 rounded-2xl p-4 flex flex-col shadow-xl">
                   <!-- pricing info -->
                   <div class="mb-4">
-                      <h3 class="text-2xl font-semibold text-green-600 mb-1">ESSENTIAL</h3>
+                      <h3 class="text-2xl font-semibold text-green-600 mb-1 md:text-4xl">ESSENTIAL</h3>
                       <p class="text-sm text-slate-700 mb-2">Individuals starting their fitness journey with structured guidance</p>
-                      <p class="text-2xl font-semibold">₹3,999<span class="text-xs text-slate-700"> /month</span></p>
+                      <p class="text-2xl font-semibold md:text-3xl">₹3,999<span class="text-xs text-slate-700"> /month</span></p>
                   </div>
 
                   <!-- pricing features -->
@@ -471,14 +494,14 @@
                 <div class="pricing__card relative border border-green-400 rounded-2xl p-4 flex flex-col shadow-xl">
                   <!-- pricing info -->
                   <div class="mb-4">
-                      <h3 class="text-2xl font-semibold text-green-600 mb-1">PERFORMANCE</h3>
+                      <h3 class="text-2xl font-semibold text-green-600 mb-1 md:text-4xl">PERFORMANCE</h3>
                       <p class="text-sm text-slate-700 mb-2">Individuals seeking consistent progress with professional guidance</p>
-                      <p class="text-2xl font-semibold">₹6,999<span class="text-xs text-slate-700"> /month</span></p>
+                      <p class="text-2xl font-semibold md:text-3xl">₹6,999<span class="text-xs text-slate-700"> /month</span></p>
                   </div>
 
                   <!-- label -->
 
-                  <div class="absolute right-2 top-2 ">
+                  <div class="absolute -right-2 -top-2 ">
                     <p class="bg-green-500 font-bold text-[10px] px-2 py-1 rounded-full block">Most Popular</p>
                   </div>
 
@@ -502,9 +525,9 @@
                 <div class="pricing__card border border-slate-300 rounded-2xl p-4 flex flex-col shadow-xl">
                   <!-- pricing info -->
                   <div class="mb-4">
-                      <h3 class="text-2xl font-semibold text-green-600 mb-1">ELITE</h3>
+                      <h3 class="text-2xl font-semibold text-green-600 mb-1 md:text-4xl">ELITE</h3>
                       <p class="text-sm text-slate-700 mb-2">Individuals committed to maximum transformation and personalized coaching</p>
-                      <p class="text-2xl font-semibold">₹11,999<span class="text-xs text-slate-700"> /month</span></p>
+                      <p class="text-2xl font-semibold md:text-3xl">₹11,999<span class="text-xs text-slate-700"> /month</span></p>
                   </div>
 
                   <!-- pricing features -->
@@ -537,12 +560,12 @@
 
         <section class="testimonials py-12">
           <div class="container max-w-6xl mx-auto px-2">
-            <div class="bg-slate-100 p-4 rounded-xl">
+            <div class="bg-slate-100 p-4 py-16 rounded-xl">
                 <div>
-                  <h3 class="text-2xl text-center font-bold mb-4 text-green-500">Client Experiences</h3>
+                  <h3 class="text-2xl text-center font-bold mb-4 text-green-500 md:text-4xl">Client Experiences</h3>
                 </div>
 
-                <div class="grid grid-cols-1 gap-4 p-2">
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-4 p-2">
                    <div class="border border-slate-300 p-2 rounded-2xl text-center">
                     <div class="flex flex-col items-center justify-center">
                       <div class="profileImg h-10 w-10 rounded-full overflow-hidden flex justify-center items-center">
@@ -584,16 +607,16 @@
 
         <section class="cta bg-green-200">
           <div class="container max-w-6xl mx-auto px-2">
-            <div class="p-4 rounded-xl">
+            <div class="p-4 rounded-xl py-16">
                 <div class="text-center">
-                  <h2 class="text-3xl font-bold mb-2">Build With Intention. <br> Train With Precision.</h2>
-                  <p class="text-sm text-slate-900">Your transformation doesn’t start with motivation — it starts with structure, consistency, and the right environment.
+                  <h2 class="text-3xl font-bold mb-2 md:text-6xl">Build With Intention. <br> Train With Precision.</h2>
+                  <p class="text-sm text-slate-900 md:text-xl md:max-w-2xl mx-auto mt-4">Your transformation doesn’t start with motivation — it starts with structure, consistency, and the right environment.
 <br>
 Take the first step toward a stronger, more refined version of yourself.</p>
                 </div>
-                <div class="flex flex-col items-center justify-center gap-4 mt-4">
-                  <button class="bg-green-400 font-semibold px-3 py-1.5 rounded-4xl cursor-pointer border border-slate-800 hover:bg-green-700 transition-all duration-200">Book Consultation</button>
-                  <button class="border-2 border-green-400 font-semibold px-3 py-1.5 rounded-4xl cursor-pointer hover:bg-green-400 transition-all duration-200">Speak to a Coach</button>
+                <div class="flex flex-col items-center justify-center gap-4 mt-4 md:flex-row md:mt-6">
+                  <button class="bg-green-400 font-semibold px-3 py-1.5 md:px-12 md:py-6 md:text-2xl rounded-4xl cursor-pointer border border-slate-800 hover:bg-green-700 transition-all duration-200">Book Consultation</button>
+                  <button class="border-2 border-green-400 font-semibold px-3 py-1.5 md:px-12 md:py-6 md:text-2xl rounded-4xl cursor-pointer hover:bg-green-400 transition-all duration-200">Speak to a Coach</button>
                 </div>
             </div>
           </div>
@@ -601,12 +624,12 @@ Take the first step toward a stronger, more refined version of yourself.</p>
       </main>
 
 
-      <footer class="bg-zinc-950 py-4 pb-12">
-        <div class="container max-w-6xl mx-auto px-2">
+      <footer class="bg-zinc-950 py-16">
+        <div class="container max-w-6xl mx-auto px-2 md:px-20">
           <div class="text-slate-100 flex flex-col justify-between">
             <div class="left mb-3 flex justify-between items-baseline">
-              <div class="logo text-4xl text-green-400 font-bold mb-2">EliteForm <br> Studio</div>
-              <div class="socials flex gap-2 text-lg *:cursor-pointer *:hover:text-slate-100">
+              <div class="logo text-4xl text-green-400 font-bold mb-2 md:text-5xl">EliteForm Studio</div>
+              <div class="socials flex gap-2 text-lg *:cursor-pointer *:hover:text-slate-100 md:text-2xl">
                 <i class="fa-brands fa-facebook" style="color: rgb(99, 230, 190);"></i>
                 <i class="fa-brands fa-instagram" style="color: rgb(99, 230, 190);"></i>
                 <i class="fa-brands fa-x-twitter" style="color: rgb(99, 230, 190);"></i>
@@ -614,13 +637,13 @@ Take the first step toward a stronger, more refined version of yourself.</p>
               </div>
             </div>
             <div class="right">
-              <ul class="flex gap-x-8 gap-y-2 flex-wrap justify-center text-slate-300 *:hover:text-green-500 *:transition-all *:duration-200">
+              <!-- <ul class="flex gap-x-8 gap-y-2 flex-wrap justify-center text-slate-300 *:hover:text-green-500 *:transition-all *:duration-200 md:text-xl">
                   <li><a href="#">Home</a></li>
                   <li><a href="#">Programs</a></li>
                   <li><a href="#">Transformations</a></li>
                   <li><a href="#">Pricing</a></li>
                   <li><a href="#">Contact</a></li>
-                </ul>
+                </ul> -->
             </div>
           </div>
         </div>
