@@ -9,6 +9,10 @@
       href="https://cdn.jsdelivr.net/npm/remixicon@4.9.0/fonts/remixicon.css"
       rel="stylesheet"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    />
   </head>
   <body>
     <div class="app__container h-full w-full bg-slate-50">
@@ -39,11 +43,16 @@
             </div>
 
             <!-- mobile -->
-            <div class="mobile__menu fixed md:hidden top-0 right-0 bg-zinc-900 w-[80%] h-full px-4 flex flex-col gap-4 translate-x-full transition duration-300 z-100">
-
-                <div class="menu__close flex justify-end mb-8 relative top-2 right-2">
-                    <button class="text-4xl text-green-400"><i class="ri-close-line"></i></button>
-                </div>
+            <div
+              class="mobile__menu fixed md:hidden top-0 right-0 bg-zinc-900 w-[80%] h-full px-4 flex flex-col gap-4 translate-x-full transition duration-300 z-100"
+            >
+              <div
+                class="menu__close flex justify-end mb-8 relative top-2 right-2"
+              >
+                <button class="text-4xl text-green-400">
+                  <i class="ri-close-line"></i>
+                </button>
+              </div>
 
               <div class="text-2xl">
                 <ul class="flex flex-col gap-4 text-slate-100">
@@ -56,52 +65,78 @@
               </div>
 
               <div class="cta md:hidden">
-                <button class="border bg-green-400 px-4 py-2 rounded-xl cursor-pointer text-2xl font-semibold">Book Consultation</button>
+                <button
+                  class="border bg-green-400 px-4 py-2 rounded-xl cursor-pointer text-2xl font-semibold"
+                >
+                  Book Consultation
+                </button>
               </div>
             </div>
 
             <div class="ham__menu">
-              <button class="text-2xl text-green-400"><i class="ri-menu-line"></i></button>
+              <button class="text-2xl text-green-400">
+                <i class="ri-menu-line"></i>
+              </button>
             </div>
           </nav>
         </div>
       </header>
 
-
       <main>
         <section class="hero mt-4">
           <!-- container utility -->
           <div class="container max-w-6xl mx-auto px-6">
-
             <!-- hero image -->
-              <div class="relative bg-[url(./hero.webp)] h-[85vh] bg-center bg-no-repeat bg-cover rounded-xl overflow-hidden">
+            <div
+              class="relative bg-[url(./hero.webp)] h-[85vh] bg-center bg-no-repeat bg-cover rounded-xl overflow-hidden"
+            >
+              <!-- overlay -->
+              <div class="absolute inset-0 bg-black/70"></div>
 
-                <!-- overlay -->
-                 <div class="absolute inset-0 bg-black/70"></div>
+              <!-- content -->
 
-                 <!-- content -->
+              <div
+                class="relative z-10 h-full flex flex-col items-center justify-center px-4"
+              >
+                <h1 class="text-slate-100 font-bold text-4xl text-center mb-4">
+                  Sculpt <span class="text-green-400">Strength.</span> <br />
+                  Refine <span class="text-green-400">Form.</span>
+                </h1>
 
-                 <div class="relative z-10 h-full flex flex-col items-center justify-center px-4">
-                  <h1 class="text-slate-100 font-bold text-4xl text-center mb-4">Sculpt <span class="text-green-400">Strength.</span> <br> Refine <span class="text-green-400">Form.</span></h1>
+                <p
+                  class="text-slate-300 font-semibold text-center leading-tight text-sm"
+                >
+                  Elite Form Studio is a premium training environment focused on
+                  precision, performance, and sustainable transformation. <br />
+                  Every program is tailored, every session intentional, and
+                  every result measurable.
+                </p>
 
-                  <p class="text-slate-300 font-semibold text-center leading-tight text-sm">Elite Form Studio is a premium training environment focused on precision, performance, and sustainable transformation. <br> Every program is tailored, every session intentional, and every result measurable.</p>
+                <!-- cta button -->
+                <div class="flex flex-col gap-4 mt-6 *:cursor-pointer">
+                  <button
+                    class="bg-green-400 px-4 py-2 rounded-xl font-semibold shadow-[0_8px_30px_rgb(0,0,0,0.12)]"
+                  >
+                    Book a Consultation
+                  </button>
+                  <button
+                    class="border border-green-400 text-green-400 rounded-xl font-semibold px-4 py-2"
+                  >
+                    View Programs
+                  </button>
+                </div>
 
+                <!-- trust line -->
 
-                  <!-- cta button -->
-                  <div class="flex flex-col gap-4 mt-6 *:cursor-pointer">
-                    <button class="bg-green-400 px-4 py-2 rounded-xl font-semibold shadow-[0_8px_30px_rgb(0,0,0,0.12)]">Book a Consultation</button>
-                    <button class="border border-green-400 text-green-400 rounded-xl font-semibold px-4 py-2">View Programs</button>
-                  </div>
-
-                  <!-- trust line -->
-
-                  <div class="flex flex-col gap-0.5 leading-tight text-center text-[12px] font-semibold mt-4">
-                    <p class="text-slate-300">1,200+ Clients Trained</p>
-                    <p class="text-slate-300">Certified Coaches</p>
-                    <p class="text-slate-300">Results-Driven Systems</p>
-                  </div>
-                 </div>
+                <div
+                  class="flex flex-col gap-0.5 leading-tight text-center text-[12px] font-semibold mt-4"
+                >
+                  <p class="text-slate-300">1,200+ Clients Trained</p>
+                  <p class="text-slate-300">Certified Coaches</p>
+                  <p class="text-slate-300">Results-Driven Systems</p>
+                </div>
               </div>
+            </div>
           </div>
         </section>
 
@@ -120,49 +155,85 @@
         <section class="about py-12 mt-2">
           <div class="container max-w-6xl mx-auto px-6">
             <div class="bg-slate-100 p-4 rounded-xl">
-              <h3 class="text-2xl text-center font-bold mb-4 text-slate-900">A System Built on Precision, Not Guesswork</h3>
+              <h3 class="text-2xl text-center font-bold mb-4 text-slate-900">
+                A System Built on Precision, Not Guesswork
+              </h3>
 
-              <p class="text-base leading-tight text-slate-800 text-center">At At Elite Form Studio, we focus on precision over randomness.
-Every movement, every set, every progression is designed with intent.
-<br><br>
-This isn’t about just working out — it’s about building a body that performs and lasts.</p>
+              <p class="text-base leading-tight text-slate-800 text-center">
+                At At Elite Form Studio, we focus on precision over randomness.
+                Every movement, every set, every progression is designed with
+                intent. <br /><br />
+                This isn’t about just working out — it’s about building a body
+                that performs and lasts.
+              </p>
 
-<div class="grid grid-cols-2 gap-2 mt-4 bg-slate-200 p-2 rounded-xl">
+              <div
+                class="grid grid-cols-2 gap-2 mt-4 bg-slate-200 p-2 rounded-xl"
+              >
+                <div class="relative h-40 rounded-xl overflow-hidden">
+                  <div
+                    class="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1583454110551-21f2fa2afe61?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D')] bg-cover bg-center"
+                  ></div>
+                  <div
+                    class="absolute inset-0 bg-linear-to-t from-black/80 to-black/20"
+                  ></div>
+                  <div
+                    class="relative z-10 flex items-center justify-center h-full w-full text-white"
+                  >
+                    <p class="text-center font-semibold">
+                      Individually tailored programs
+                    </p>
+                  </div>
+                </div>
 
-  <div class="relative h-40 rounded-xl overflow-hidden">
-    <div class="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1583454110551-21f2fa2afe61?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D')] bg-cover bg-center"></div>
-    <div class="absolute inset-0 bg-linear-to-t from-black/80 to-black/20"></div>
-    <div class="relative z-10 flex items-center justify-center h-full w-full text-white">
-      <p class="text-center font-semibold">Individually tailored programs</p>
-    </div>
-  </div>
+                <div class="relative h-40 rounded-xl overflow-hidden">
+                  <div
+                    class="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1512621776951-a57141f2eefd?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D')] bg-cover bg-center"
+                  ></div>
+                  <div
+                    class="absolute inset-0 bg-linear-to-t from-black/80 to-black/20"
+                  ></div>
+                  <div
+                    class="relative z-10 flex items-center justify-center h-full w-full text-white"
+                  >
+                    <p class="text-center font-semibold">
+                      Nutrition integration
+                    </p>
+                  </div>
+                </div>
 
-  <div class="relative h-40 rounded-xl overflow-hidden">
-    <div class="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1512621776951-a57141f2eefd?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D')] bg-cover bg-center"></div>
-    <div class="absolute inset-0 bg-linear-to-t from-black/80 to-black/20"></div>
-    <div class="relative z-10 flex items-center justify-center h-full w-full text-white">
-      <p class="text-center font-semibold">Nutrition integration</p>
-    </div>
-  </div>
+                <div class="relative h-40 rounded-xl overflow-hidden">
+                  <div
+                    class="absolute inset-0 bg-[url('https://plus.unsplash.com/premium_photo-1672862925604-9079f0a492e8?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D')] bg-cover bg-center"
+                  ></div>
+                  <div
+                    class="absolute inset-0 bg-linear-to-t from-black/80 to-black/20"
+                  ></div>
+                  <div
+                    class="relative z-10 flex items-center justify-center h-full w-full text-white"
+                  >
+                    <p class="text-center font-semibold">
+                      Structured progression models
+                    </p>
+                  </div>
+                </div>
 
-  <div class="relative h-40 rounded-xl overflow-hidden">
-    <div class="absolute inset-0 bg-[url('https://plus.unsplash.com/premium_photo-1672862925604-9079f0a492e8?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D')] bg-cover bg-center"></div>
-    <div class="absolute inset-0 bg-linear-to-t from-black/80 to-black/20"></div>
-    <div class="relative z-10 flex items-center justify-center h-full w-full text-white">
-      <p class="text-center font-semibold">Structured progression models</p>
-    </div>
-  </div>
-
-  <div class="relative h-40 rounded-xl overflow-hidden">
-    <div class="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1773399452188-a42e29543bf2?q=80&w=790&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D')] bg-cover bg-center"></div>
-    <div class="absolute inset-0 bg-linear-to-t from-black/80 to-black/20"></div>
-    <div class="relative z-10 flex items-center justify-center h-full w-full text-white">
-      <p class="text-center font-semibold">Continuous performance tracking</p>
-    </div>
-  </div>
-
-
-</div>
+                <div class="relative h-40 rounded-xl overflow-hidden">
+                  <div
+                    class="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1773399452188-a42e29543bf2?q=80&w=790&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D')] bg-cover bg-center"
+                  ></div>
+                  <div
+                    class="absolute inset-0 bg-linear-to-t from-black/80 to-black/20"
+                  ></div>
+                  <div
+                    class="relative z-10 flex items-center justify-center h-full w-full text-white"
+                  >
+                    <p class="text-center font-semibold">
+                      Continuous performance tracking
+                    </p>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </section>
@@ -170,86 +241,300 @@ This isn’t about just working out — it’s about building a body that perfor
         <section class="programs py-12">
           <div class="container max-w-6xl mx-auto px-6">
             <div class="bg-slate-100 p-4 rounded-xl">
-              <h3 class="text-center font-bold text-slate-900 text-2xl mb-6">Structured Programs. <br> Defined Outcomes.</h3>
+              <h3 class="text-center font-bold text-slate-900 text-2xl mb-6">
+                Structured Programs. <br />
+                Defined Outcomes.
+              </h3>
 
               <div class="grid grid-cols-1 gap-8">
-                <div class="card border-l-4 border-l-red-600 pl-2 flex justify-center flex-col">
-                  <h4 class="text-lg font-semibold text-red-600 mb-1">Body Recomposition Program</h4>
-                  <p class="text-sm text-slate-800">A balanced approach to reducing body fat while developing lean muscle mass. Designed for individuals seeking visible, sustainable transformation without extreme methods.</p>
+                <div
+                  class="card border-l-4 border-l-red-600 pl-2 flex justify-center flex-col"
+                >
+                  <h4 class="text-lg font-semibold text-red-600 mb-1">
+                    Body Recomposition Program
+                  </h4>
+                  <p class="text-sm text-slate-800">
+                    A balanced approach to reducing body fat while developing
+                    lean muscle mass. Designed for individuals seeking visible,
+                    sustainable transformation without extreme methods.
+                  </p>
                 </div>
 
-                <div class="card border-l-4 border-l-sky-600 pl-2 flex justify-center flex-col">
-                  <h4 class="text-lg font-semibold text-sky-600 mb-1">Strength Development Program</h4>
-                  <p class="text-sm text-slate-800">Progressive strength training focused on building raw power, improving compound lifts, and enhancing overall performance.</p>
+                <div
+                  class="card border-l-4 border-l-sky-600 pl-2 flex justify-center flex-col"
+                >
+                  <h4 class="text-lg font-semibold text-sky-600 mb-1">
+                    Strength Development Program
+                  </h4>
+                  <p class="text-sm text-slate-800">
+                    Progressive strength training focused on building raw power,
+                    improving compound lifts, and enhancing overall performance.
+                  </p>
                 </div>
 
-                <div class="card border-l-4 border-l-green-600 pl-2 flex justify-center flex-col">
-                  <h4 class="text-lg font-semibold text-green-600 mb-1">Private Coaching</h4>
-                  <p class="text-sm text-slate-800">One-on-one coaching sessions tailored to your specific goals, movement patterns, and performance benchmarks.</p>
+                <div
+                  class="card border-l-4 border-l-green-600 pl-2 flex justify-center flex-col"
+                >
+                  <h4 class="text-lg font-semibold text-green-600 mb-1">
+                    Private Coaching
+                  </h4>
+                  <p class="text-sm text-slate-800">
+                    One-on-one coaching sessions tailored to your specific
+                    goals, movement patterns, and performance benchmarks.
+                  </p>
                 </div>
 
-                <div class="card border-l-4 border-l-yellow-500 pl-2 flex justify-center flex-col">
-                  <h4 class="text-lg font-semibold text-yellow-500 mb-1">Online Coaching</h4>
-                  <p class="text-sm text-slate-800">A fully guided remote training system with customized workout plans, regular check-ins, and progress tracking.</p>
+                <div
+                  class="card border-l-4 border-l-yellow-500 pl-2 flex justify-center flex-col"
+                >
+                  <h4 class="text-lg font-semibold text-yellow-500 mb-1">
+                    Online Coaching
+                  </h4>
+                  <p class="text-sm text-slate-800">
+                    A fully guided remote training system with customized
+                    workout plans, regular check-ins, and progress tracking.
+                  </p>
                 </div>
-
-
               </div>
             </div>
           </div>
         </section>
 
         <section class="transformation py-12">
-            <div class="container max-w-6xl mx-auto px-6">
-              <div class="bg-slate-100 p-4 rounded-xl">
-                  <h4 class="text-center font-bold text-slate-900 text-2xl mb-6">Measurable Progress. <br>Visible Results.</h4>
-                  <p class="text-base leading-tight text-slate-800 text-center">Every transformation at Elite Form Studio is backed by structured tracking, consistent execution, and refined programming.
-<br><br>
-We focus on results that are not only visible — but sustainable.</p>
+          <div class="container max-w-6xl mx-auto px-6">
+            <div class="bg-slate-100 p-4 rounded-xl">
+              <h4 class="text-center font-bold text-slate-900 text-2xl mb-6">
+                Measurable Progress. <br />Visible Results.
+              </h4>
+              <p class="text-base leading-tight text-slate-800 text-center">
+                Every transformation at Elite Form Studio is backed by
+                structured tracking, consistent execution, and refined
+                programming. <br /><br />
+                We focus on results that are not only visible — but sustainable.
+              </p>
 
-                    <div class="grid grid-cols-1 gap-4 p-4">
-                      <div class="card relative h-50 rounded-2xl overflow-hidden shadow-[0px_0px_0px_1px_rgba(0,0,0,0.06),0px_1px_1px_-0.5px_rgba(0,0,0,0.06),0px_3px_3px_-1.5px_rgba(0,0,0,0.06),0px_6px_6px_-3px_rgba(0,0,0,0.06),0px_12px_12px_-6px_rgba(0,0,0,0.06),0px_24px_24px_-12px_rgba(0,0,0,0.06)]">
-                        <div class="absolute inset-0 bg-[url('https://s.yimg.com/ny/api/res/1.2/8JMXg3wTDSV02yS4_5wUEg--/YXBwaWQ9aGlnaGxhbmRlcjt3PTEyNDI7aD04ODc7Y2Y9d2VicA--/http://40.media.tumblr.com/22dc20f10d1a63361c753ad215dba421/tumblr_inline_o04yypCALW1tcjfoa_1280.jpg')] bg-cover bg-center"></div>
-                        <div class="absolute inset-0 bg-linear-to-t from-black/80 to-black/20"></div>
-                        <div class="absolute bottom-1 right-0 left-0 text-center text-slate-50 ">
-                          <h4 class="text-base font-semibold">Rahul S.</h4>
-                          <p class="text-sm">12kg Fat Loss in 16 Weeks</p>
-                        </div>
-                      </div>
+              <div class="grid grid-cols-1 gap-4 p-4">
+                <div
+                  class="card relative h-50 rounded-2xl overflow-hidden shadow-[0px_0px_0px_1px_rgba(0,0,0,0.06),0px_1px_1px_-0.5px_rgba(0,0,0,0.06),0px_3px_3px_-1.5px_rgba(0,0,0,0.06),0px_6px_6px_-3px_rgba(0,0,0,0.06),0px_12px_12px_-6px_rgba(0,0,0,0.06),0px_24px_24px_-12px_rgba(0,0,0,0.06)]"
+                >
+                  <div
+                    class="absolute inset-0 bg-[url('https://s.yimg.com/ny/api/res/1.2/8JMXg3wTDSV02yS4_5wUEg--/YXBwaWQ9aGlnaGxhbmRlcjt3PTEyNDI7aD04ODc7Y2Y9d2VicA--/http://40.media.tumblr.com/22dc20f10d1a63361c753ad215dba421/tumblr_inline_o04yypCALW1tcjfoa_1280.jpg')] bg-cover bg-center"
+                  ></div>
+                  <div
+                    class="absolute inset-0 bg-linear-to-t from-black/80 to-black/20"
+                  ></div>
+                  <div
+                    class="absolute bottom-1 right-0 left-0 text-center text-slate-50"
+                  >
+                    <h4 class="text-base font-semibold">Rahul S.</h4>
+                    <p class="text-sm">12kg Fat Loss in 16 Weeks</p>
+                  </div>
+                </div>
 
-                      <div class="card relative h-50 rounded-2xl overflow-hidden shadow-[0px_0px_0px_1px_rgba(0,0,0,0.06),0px_1px_1px_-0.5px_rgba(0,0,0,0.06),0px_3px_3px_-1.5px_rgba(0,0,0,0.06),0px_6px_6px_-3px_rgba(0,0,0,0.06),0px_12px_12px_-6px_rgba(0,0,0,0.06),0px_24px_24px_-12px_rgba(0,0,0,0.06)]">
-                        <div class="absolute inset-0 bg-[url('https://content3.jdmagicbox.com/comp/kota-rajasthan/t6/9999px744.x744.190703172521.m2t6/catalogue/fat-to-fit-studio-vigyan-nagar-kota-rajasthan-zumba-classes-h9hzusrl4q.jpg')] bg-cover bg-center"></div>
-                        <div class="absolute inset-0 bg-linear-to-t from-black/80 to-black/20"></div>
-                        <div class="absolute bottom-1 right-0 left-0 text-center text-slate-50 ">
-                          <h4 class="text-base font-semibold">Aditi K.</h4>
-                          <p class="text-sm">Strength Gain + Body Recomposition</p>
-                        </div>
-                      </div>
+                <div
+                  class="card relative h-50 rounded-2xl overflow-hidden shadow-[0px_0px_0px_1px_rgba(0,0,0,0.06),0px_1px_1px_-0.5px_rgba(0,0,0,0.06),0px_3px_3px_-1.5px_rgba(0,0,0,0.06),0px_6px_6px_-3px_rgba(0,0,0,0.06),0px_12px_12px_-6px_rgba(0,0,0,0.06),0px_24px_24px_-12px_rgba(0,0,0,0.06)]"
+                >
+                  <div
+                    class="absolute inset-0 bg-[url('https://content3.jdmagicbox.com/comp/kota-rajasthan/t6/9999px744.x744.190703172521.m2t6/catalogue/fat-to-fit-studio-vigyan-nagar-kota-rajasthan-zumba-classes-h9hzusrl4q.jpg')] bg-cover bg-center"
+                  ></div>
+                  <div
+                    class="absolute inset-0 bg-linear-to-t from-black/80 to-black/20"
+                  ></div>
+                  <div
+                    class="absolute bottom-1 right-0 left-0 text-center text-slate-50"
+                  >
+                    <h4 class="text-base font-semibold">Aditi K.</h4>
+                    <p class="text-sm">Strength Gain + Body Recomposition</p>
+                  </div>
+                </div>
 
-                      <div class="card relative h-50 rounded-2xl overflow-hidden shadow-[0px_0px_0px_1px_rgba(0,0,0,0.06),0px_1px_1px_-0.5px_rgba(0,0,0,0.06),0px_3px_3px_-1.5px_rgba(0,0,0,0.06),0px_6px_6px_-3px_rgba(0,0,0,0.06),0px_12px_12px_-6px_rgba(0,0,0,0.06),0px_24px_24px_-12px_rgba(0,0,0,0.06)]">
-                        <div class="absolute inset-0 bg-[url('https://i0.wp.com/ironandgrit.com/wp-content/uploads/2018/11/fat-to-fit-in-3-months-body-transformation-550x550.jpeg?resize=550%2C550')] bg-cover bg-center"></div>
-                        <div class="absolute inset-0 bg-linear-to-t from-black/80 to-black/20"></div>
-                        <div class="absolute bottom-1 right-0 left-0 text-center text-slate-50 ">
-                          <h4 class="text-base font-semibold">Arjun M.</h4>
-                          <p class="text-sm">Muscle Gain in 20 Weeks</p>
-                        </div>
-                      </div>
-                    </div>
+                <div
+                  class="card relative h-50 rounded-2xl overflow-hidden shadow-[0px_0px_0px_1px_rgba(0,0,0,0.06),0px_1px_1px_-0.5px_rgba(0,0,0,0.06),0px_3px_3px_-1.5px_rgba(0,0,0,0.06),0px_6px_6px_-3px_rgba(0,0,0,0.06),0px_12px_12px_-6px_rgba(0,0,0,0.06),0px_24px_24px_-12px_rgba(0,0,0,0.06)]"
+                >
+                  <div
+                    class="absolute inset-0 bg-[url('https://i0.wp.com/ironandgrit.com/wp-content/uploads/2018/11/fat-to-fit-in-3-months-body-transformation-550x550.jpeg?resize=550%2C550')] bg-cover bg-center"
+                  ></div>
+                  <div
+                    class="absolute inset-0 bg-linear-to-t from-black/80 to-black/20"
+                  ></div>
+                  <div
+                    class="absolute bottom-1 right-0 left-0 text-center text-slate-50"
+                  >
+                    <h4 class="text-base font-semibold">Arjun M.</h4>
+                    <p class="text-sm">Muscle Gain in 20 Weeks</p>
+                  </div>
+                </div>
               </div>
             </div>
+          </div>
         </section>
 
         <section class="choose py-12">
           <div class="container max-w-6xl mx-auto px-6">
-            <div class="">
+            <div class="bg-slate-100 p-4 rounded-xl">
+              <div class="text-center">
+                <h2 class="font-bold text-3xl mb-4 text-green-500">WHY CHOOSE US</h2>
+                <h3 class="font-semibold text-2xl">The Elite Standard</h3>
+              </div>
 
+              <div class="mt-4 grid grid-cols-1 gap-4">
+                
+                
+                <div class="card flex flex-col text-center gap-2 border border-slate-300 p-2 rounded-xl">
+                  <div class="flex justify-center items-start pt-2 text-xl">
+                    <i class="fa-solid fa-bullseye" style="color: rgb(99, 230, 190);"></i>
+                  </div>
+                  <div>
+                    <h4 class="text-lg font-semibold text-slate-900">Precision-Based Training</h4>
+                    <p class="text-sm text-slate-700">
+                      Every program is designed with calculated progression and
+                      clear intent.
+                    </p>
+                  </div>
+                </div>
+
+                <div class="card flex flex-col text-center gap-2 border border-slate-300 p-2 rounded-xl">
+                  <div class="flex justify-center items-start pt-2 text-xl">
+                    <i class="fa-solid fa-chart-line" style="color: rgb(99, 230, 190);"></i>
+                  </div>
+                  <div>
+                    <h4 class="text-lg font-semibold text-slate-900">Data-Driven Progress Tracking</h4>
+                    <p class="text-sm text-slate-700">
+                      Performance metrics are continuously monitored to ensure consistent improvement.
+                    </p>
+                  </div>
+                </div>
+
+                <div class="card flex flex-col text-center gap-2 border border-slate-300 p-2 rounded-xl">
+                  <div class="flex justify-center items-start pt-2 text-xl">
+                    <i class="fa-solid fa-person-chalkboard" style="color: rgb(99, 230, 190);"></i>
+                  </div>
+                  <div>
+                    <h4 class="text-lg font-semibold text-slate-900">Expert Coaching</h4>
+                    <p class="text-sm text-slate-700">
+                      Work with certified professionals focused on technique, efficiency, and results.
+                    </p>
+                  </div>
+                </div>
+
+                <div class="card flex flex-col text-center gap-2 border border-slate-300 p-2 rounded-xl">
+                  <div class="flex justify-center items-start pt-2 text-xl">
+                    <i class="fa-solid fa-crosshairs" style="color: rgb(99, 230, 190);"></i>
+                  </div>
+                  <div>
+                    <h4 class="text-lg font-semibold text-slate-900">Focused Training Environment</h4>
+                    <p class="text-sm text-slate-700">
+                      A distraction-free space built for serious individuals committed to growth.
+                    </p>
+                  </div>
+                </div>
+              </div>
             </div>
+          </div>
+        </section>
+
+        <section class="pricing">
+          <div class="container max-w-6xl mx-auto px-6">
+            <div class="bg-slate-100 p-4 rounded-xl">
+                <div class="text-center">
+                  <h3 class="text-2xl text-center font-bold mb-4 text-slate-900">Choose Your Level of Commitment</h3>
+                  <p class="text-base leading-tight text-slate-800 text-center">Our programs are designed to match your goals, experience level, and desired level of support.</p>
+                </div>
+
+
+                <!-- pricing cards -->
+                 <div class="mt-4 grid grid-cols-1 gap-8">
+                <div class="pricing__card border border-slate-300 rounded-2xl p-4 flex flex-col shadow-xl">
+                  <!-- pricing info -->
+                  <div class="mb-4">
+                      <h3 class="text-2xl font-semibold text-green-600 mb-1">ESSENTIAL</h3>
+                      <p class="text-sm text-slate-700 mb-2">Individuals starting their fitness journey with structured guidance</p>
+                      <p class="text-2xl font-semibold">₹3,999<span class="text-xs text-slate-700"> /month</span></p>
+                  </div>
+
+                  <!-- pricing features -->
+                  <div class="text-sm mb-6">
+                    <ul class="flex flex-col gap-2">
+                      <li><i class="fa-solid fa-circle-check" style="color: rgb(99, 230, 190);"></i> Full gym access</li>
+                      <li><i class="fa-solid fa-circle-check" style="color: rgb(99, 230, 190);"></i>  Structured beginner-friendly program</li>
+                      <li><i class="fa-solid fa-circle-check" style="color: rgb(99, 230, 190);"></i>  Basic progress tracking</li>
+                      <li><i class="fa-solid fa-circle-check" style="color: rgb(99, 230, 190);"></i>  Access to group sessions</li>
+                    </ul>
+                  </div>
+
+                  <!-- button -->
+                  <div class="mt-auto flex justify-center items-center">
+                    <button class="bg-green-500 cursor-pointer px-4 py-2 rounded-2xl font-semibold border border-slate-400 shadow-2xs">Start Your Journey</button>
+                  </div>
+                </div>
+
+                <div class="pricing__card relative border border-green-400 rounded-2xl p-4 flex flex-col shadow-xl">
+                  <!-- pricing info -->
+                  <div class="mb-4">
+                      <h3 class="text-2xl font-semibold text-green-600 mb-1">PERFORMANCE</h3>
+                      <p class="text-sm text-slate-700 mb-2">Individuals seeking consistent progress with professional guidance</p>
+                      <p class="text-2xl font-semibold">₹6,999<span class="text-xs text-slate-700"> /month</span></p>
+                  </div>
+
+                  <!-- label -->
+
+                  <div class="absolute right-2 top-2 ">
+                    <p class="bg-green-500 font-bold text-[10px] px-2 py-1 rounded-full block">Most Popular</p>
+                  </div>
+
+                  <!-- pricing features -->
+                  <div class="text-sm mb-6">
+                    <ul class="flex flex-col gap-2">
+                      <li><i class="fa-solid fa-circle-check" style="color: rgb(99, 230, 190);"></i> Everything in Essential</li>
+                      <li><i class="fa-solid fa-circle-check" style="color: rgb(99, 230, 190);"></i>  Personalized workout programming</li>
+                      <li><i class="fa-solid fa-circle-check" style="color: rgb(99, 230, 190);"></i>  Nutrition guidance</li>
+                      <li><i class="fa-solid fa-circle-check" style="color: rgb(99, 230, 190);"></i>  Monthly progress reviews</li>
+                      <li><i class="fa-solid fa-circle-check" style="color: rgb(99, 230, 190);"></i>  Priority support</li>
+                    </ul>
+                  </div>
+
+                  <!-- button -->
+                  <div class="mt-auto flex justify-center items-center">
+                    <button class="bg-green-500 cursor-pointer px-4 py-2 rounded-2xl font-semibold border border-slate-400 shadow-2xs">Start Your Transformation</button>
+                  </div>
+                </div>
+
+                <div class="pricing__card border border-slate-300 rounded-2xl p-4 flex flex-col shadow-xl">
+                  <!-- pricing info -->
+                  <div class="mb-4">
+                      <h3 class="text-2xl font-semibold text-green-600 mb-1">ELITE</h3>
+                      <p class="text-sm text-slate-700 mb-2">Individuals committed to maximum transformation and personalized coaching</p>
+                      <p class="text-2xl font-semibold">₹11,999<span class="text-xs text-slate-700"> /month</span></p>
+                  </div>
+
+                  <!-- pricing features -->
+                  <div class="text-sm mb-6">
+                    <ul class="flex flex-col gap-2">
+                      <li><i class="fa-solid fa-circle-check" style="color: rgb(99, 230, 190);"></i> One-on-one coaching sessions</li>
+                      <li><i class="fa-solid fa-circle-check" style="color: rgb(99, 230, 190);"></i>  Fully customized training & nutrition plan</li>
+                      <li><i class="fa-solid fa-circle-check" style="color: rgb(99, 230, 190);"></i>  Weekly progress tracking & adjustments</li>
+                      <li><i class="fa-solid fa-circle-check" style="color: rgb(99, 230, 190);"></i>  Direct coach access</li>
+                      <li><i class="fa-solid fa-circle-check" style="color: rgb(99, 230, 190);"></i>  Priority scheduling</li>
+                    </ul>
+                  </div>
+
+                  <!-- button -->
+                  <div class="mt-auto flex justify-center items-center">
+                    <button class="bg-green-500 cursor-pointer px-4 py-2 rounded-2xl font-semibold border border-slate-400 shadow-2xs">Start Your Transformation</button>
+                  </div>
+                </div>
+            </div>
+            </div>
+
+
+           
+
+
+
           </div>
         </section>
       </main>
     </div>
-
-
 
     <script src="script.js"></script>
   </body>
